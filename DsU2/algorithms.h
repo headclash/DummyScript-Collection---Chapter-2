@@ -1,11 +1,15 @@
+﻿#ifndef ALGORITHMS_H
+#define ALGORITHMS_H
+
 #pragma once
+#include <vector>
 
 class Algorithms {
 public:
 
-	void numPrint();
-	void primePrint();
-	void oddPrintFor();
-	void oddPrintBack();
-	void arraySum();
+	std::vector<int> numPrint(int cap_value);
+	std::vector<int> primePrint(int cap_value);
+	int arraySum(const std::vector<int>& numbers);
 };
+
+#endif
